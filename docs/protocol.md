@@ -35,3 +35,15 @@ Matchmaking, lobbies and gameplay are Photon Realtime on `ns.exitgames.com` (glo
 `9d45adf2-e83f-4281-b9f5-02728f813f80`), served by `platforms/switch/games/photon`. Quick match is
 `OpJoinRandomGame` with a Photon SQL-lobby filter on room properties `C0`, `C1` and `C3`. Private
 sessions join a room by its session id. High scores are kept on the console.
+
+## From the previous README
+
+Unrailed! on Nintendo Switch (`010042C011476000`) plays online through two services:
+
+| What | Where | Served by |
+| --- | --- | --- |
+| Matchmaking, lobbies, gameplay | Photon Realtime, `ns.exitgames.com` | [`photon`](https://github.com/openpak/photon) |
+| Online gate, kick list, avatar and replay uploads | the developer's web API, `unrailed-online.com:8443` / `:8080` | this repo (`unrailedd`) |
+
+The game is host-authoritative: the Photon master client runs the session and the others follow
+it through room events or Photon Punchthrough. Nothing here simulates the game.
