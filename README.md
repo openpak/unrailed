@@ -35,7 +35,6 @@ go run ./cmd/unrailedd
 - [Notes](docs/notes.md)
 - [Ports](docs/ports.md)
 - [Provenance](docs/provenance.md)
-- [Next session](docs/next-session.md)
 
 Live compatibility status: [openpak.org/titles#t-138](https://openpak.org/titles#t-138).
 
