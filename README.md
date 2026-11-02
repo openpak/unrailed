@@ -31,9 +31,7 @@ go run ./cmd/unrailedd
 
 - [Protocol](docs/protocol.md)
 - [Deploy](docs/deploy.md)
-- [Notes](docs/notes.md)
 - [Ports](docs/ports.md)
-- [Provenance](docs/provenance.md)
 
 Live compatibility status: [openpak.org/titles#t-138](https://openpak.org/titles#t-138).
 

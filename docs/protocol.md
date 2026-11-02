@@ -1,7 +1,7 @@
 # unrailed-online.com — the client's contract
 
 Read from the Switch executable (Unrailed! `010042C011476000`, update v1.0.12, a .NET NativeAOT
-build), see [provenance](provenance.md). Keep this file in step with `cmd/unrailedd`.
+build), a clean-room read of the owner's own client (no server code of the developer was seen). It needs a capture of a real session to confirm it. Keep this file in step with `cmd/unrailedd`.
 
 ## Base URL
 
@@ -47,3 +47,11 @@ Unrailed! on Nintendo Switch (`010042C011476000`) plays online through two servi
 
 The game is host-authoritative: the Photon master client runs the session and the others follow
 it through room events or Photon Punchthrough. Nothing here simulates the game.
+
+## Sources
+
+Everything above comes from string literals and the code that uses them in the Switch executable
+v1.0.12 (base URLs and the setting that picks one, paths, kick-call query builder, the
+`NoOnlineService` refusal check, the `id:name` kick parser, multipart upload field names, the
+Photon AppId and name-server literals). One `GET /` to each live port on 2026-10-24 answered 404:
+the live host is an HTTP server on both ports.
