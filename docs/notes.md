@@ -1,6 +1,6 @@
 # Notes: unrailed
 
-## Status
+## Contract
 
-Not deployed and not yet tested against the game. The contract in [protocol.md](protocol.md)
-was read from the Switch executable. It still needs a capture of a real session.
+The contract in [protocol.md](protocol.md) was read from the Switch executable and needs a
+capture of a real session to confirm it.
